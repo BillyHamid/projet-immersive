@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visite Immersive</title>
+
+  <!-- Import du CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Import Map pour les modules JS -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+        "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.module.js",
+        "@photo-sphere-viewer/autorotate-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/autorotate-plugin@5/index.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <!-- Script principal -->
+  <script type="module" src="sript.js"></script>
+</body>
+</html>
