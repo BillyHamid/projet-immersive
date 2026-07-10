@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin@5/index.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5/index.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -14,6 +15,8 @@
         {
             "imports": {
                 "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three/examples/jsm/",
+                "three/addons/libs/draco/": "https://cdn.jsdelivr.net/npm/three/examples/jsm/libs/draco/",
                 "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.module.js",
                 "@photo-sphere-viewer/autorotate-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/autorotate-plugin@5/index.module.js",
                 "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin@5/index.module.js",
@@ -23,6 +26,23 @@
     </script>
 </head>
 <body>
+    <!-- Barre d'info lieu actuel -->
+    <div id="location-bar">
+        <span id="current-location">Bienvenue</span>
+    </div>
+
+    <!-- Overlay effets de transition immersive -->
+    <div id="motion-overlay">
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+    </div>
+
     <div id="viewer"></div>
     <script type="module" src="script.js"></script>
 </body>
