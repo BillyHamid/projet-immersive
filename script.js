@@ -29,7 +29,6 @@ const tourNodes = [
 const navigationHotspots = {
     'pano1': [
         { targetId: 'pano2', position: { yaw: '55deg', pitch: '-0.10deg' }, name: 'Salle de formation', type: 'floor' },
-        { targetId: 'pano3', position: { yaw: '135deg', pitch: '-30deg' }, name: 'Bâtiment Historique', type: 'floor' },
     ],
     'pano2': [
         { targetId: 'pano1', position: { yaw: '-135deg', pitch: '-30deg' }, name: 'Retour Accueil', type: 'floor' },
